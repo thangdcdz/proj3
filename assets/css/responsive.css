@@ -1,12 +1,13 @@
 /* PC */
 @media (min-width: 992px) {
-    .mobile-header {
-        display: none;
-    }
+  .mobile-header {
+    display: none;
+  }
 }
 
 /* tablet & mobile */
 @media (max-width: 991.98px) {
+  /* header */
   .navbar {
     display: none;
   }
@@ -80,6 +81,44 @@
   .navbar__link:hover {
     background-color: #00ffff37;
   }
+
+  /* hero */
+  .hero {
+    flex-direction: column;
+    gap: 50px;
+  }
+  .hero__content {
+    order: 2;
+    width: 80%;
+    text-align: center;
+    margin: 22px auto;
+  }
+
+  .hero__media {
+    order: 1;
+  }
+  .hero__row {
+    justify-content: center;
+  }
+
+  /* service */
+  .service__row {
+    flex-direction: column;
+    row-gap: 20px;
+  }
+
+  .service__img {
+    width: 100%;
+  }
+
+  .service__list {
+    text-align: center;
+  }
+
+  .service-item {
+    width: 90%;
+    text-align: start;
+  }
 }
 
 /* tablet */
@@ -90,8 +129,6 @@
 @media (max-width: 767.98px) {
 }
 
-.hero,
-.footer,
-main {
+.footer {
   display: none;
 }
